@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mata-Mosquisto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/mosca.png" type="image/x-icon">
 </head>
 <body onresize="ajustaTamanhoPalcoJogo()">
 
-
-
-
-
-
-
+    <div class="painel">
+        <div class="vidas">
+            <img id=v1 src="imagens/coracao_cheio.png" alt="coracao-vazio">
+            <img id=v2 src="imagens/coracao_cheio.png" alt="coracao-cheio">
+            <img id=v3 src="imagens/coracao_cheio.png" alt="coracao-cheio">
+        </div>
+        <div class="cronometro">
+            Tempo Restante: <span id="cronometro"></span>
+        </div>
+    </div>
     <script src="jogo.js"></script>
 </body>
 </html>
