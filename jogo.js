@@ -103,21 +103,3 @@ posicaoRandomica = () => {
   tamanhoAleatorio();
 };
 
-//Criando o ciclo de tempo para aparecer o mosquito na tela
-let criaMosquito = setInterval(() => {
-  posicaoRandomica();
-}, criaMosquitoTempo);
-
-
-//Função para iniciar o jogo
-iniciarJogo = () => {
-  let nivel = document.getElementById('nivel').value
-
-  if (nivel === '') {
-    alert('Selecione o nível do jogo para iniciar')
-    return false //Para encerrar a função
-  } 
-  
-  window.location.href = 'app.html?' + nivel
-
-}
